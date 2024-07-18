@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <!-- ************************ form.html use ******************* -->
+        <h1>Trip Information Form</h1>
+        <form action="form.php"></form>
+        <!-- text type input -->
+        <input type="text" placeholder="Enter your name please.">
+        <br>
+        <!-- radio type input and use of label as well -->
+        <label for="SectionIda">
+            SectionA<input type="radio" value="Section a" name="Section" id="SectionIda">
+        </label>
+        <label for="SectionIdb">
+            SectionB<input type="radio" value="Section b" name="Section" id="SectionIdb">
+        </label>
+        <label for="SectionIdc">
+            SectionC<input type="radio" value="Section c" name="Section" id="SectionIdc">
+        </label><br>
+        <!-- checkbox input two method explain here to write label and checkbox  -->
+        <!-- if we do not use label then we can't check box by clicking on the text written -->
+        <label for="foodcanteen">Want food canteen card</label>
+        <input type="checkbox" name="canteen" id="foodcanteen" class="red"><br>
+        <label for="travellingTrip">
+            Want travelling card<input type="checkbox" name="travelling" id="travellingTrip" class="red">
+        </label><br>
+        <!-- date input -->
+        <label for="dateId">
+            Select the date of joining<input type="date" name="Date" id="dateId">
+        </label><br>
+        <!-- email input -->
+        <label for="gmail">
+            Write your email please<input type="email" name="Mail" id="gmail">
+        </label><br>
+        <!-- color input -->
+        <label for="Color">
+            Select color of your house<input type="color" name="ColorHouse" id="Color" class="red blue">
+        </label><br>
+        <!-- testarea input -->
+        <textarea name="explain" id="explain" cols="30" rows="10" placeholder="Explain why to join:"></textarea>
+        <!-- select option input -->
+        <br>
+        <!-- <p>Select how many days do you want to stay</p> -->
+        <select name="Days" id="Days">
+            <option value="1">Select how many days do you want to stay</option>
+            <option value="3">3</option>
+            <option value="7">7</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+        </select>
+    </div>
+</body>
+</html>

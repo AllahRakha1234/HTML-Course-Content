@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Images:-</h1>
+    <p>Here are many pics.</p>  
+    <!-- How to upload image on web -->
+
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+        alt="Alone Human Image" width="140px">
+    <hr>
+
+    <!-- How to upload image in relative folder For this kind of work use first and then write just name of that file -->
+
+    <br>
+    <img src="/img.jpg" alt="My Image" width="140px">
+    <hr>
+    <br>
+
+    <!-- How to bold, italic and underlined  -->
+    
+    <b>This is bold.</b>
+    <br>
+    <u>This is underline.</u>
+    <br>
+    <i>This is italic.</i>
+    <br>
+    <hr>
+    <!-- ===> Important Notes ===> <br> is use for new line and <hr> is use to draw a horizontal line and no extra space or line effect display as html ignores them as express in bold line -->
+    <a href="/about.html">Go to About</a>
+    <!-- For big and small text  -->
+
+    <big>This is big.</big>
+    <small>This is small.</small>
+    <hr>
+    <!-- How to add subscript or superscript(power) in code -->
+    <p>H<sub>2</sub>SO<sub>4</sub></p>
+    <p>Quadratic Equation:-</p>
+    <p>ax<sup>2</sup>+bx+C</p>
+
+    <!-- <pre> tab is use to render text as in its original form as u want to see it -->
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Without pre tab $$$$$$$$$$$$$$$$$$$$$$$$$$$$4 -->
+        <hr>
+        #include <iostream>
+            using namespace std;
+            class Box
+            {
+            private:
+                int length;
+                int width;
+                int height;
+            public:
+                Box(int l, int w, int h):length(l),width(w),height(h){cout << "Constructor calling";}
+                // Getter
+                int getvalue()
+                {
+                    cout <<"\nLength:" << length << "\nWidth:" << width << "\nHeight:" << height << endl;
+                }
+            };
+            int main()
+            {
+                Box b1(2,3,4),b2(b1);
+                b1.getvalue();
+                b2.getvalue();
+                return 0;
+            }
+   <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ With pre tab $$$$$$$$$$$$$$$$$$$$$$$$$$$$4 -->
+   <hr>
+   <pre>#include <iostream>
+    using namespace std;
+    class Box
+    {
+    private:
+        int length;
+        int width;
+        int height;
+    public:
+        Box(int l, int w, int h):length(l),width(w),height(h){cout << "Constructor calling";}
+        // Getter
+        int getvalue()
+        {
+            cout <<"\nLength:" << length << "\nWidth:" << width << "\nHeight:" << height << endl;
+        }
+    };
+    int main()
+    {
+        Box b1(2,3,4),b2(b1);
+        b1.getvalue();
+        b2.getvalue();
+        return 0;
+    }</pre>
+    <hr>
+</body>
+
+</html>
